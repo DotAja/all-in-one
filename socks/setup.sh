@@ -14,7 +14,7 @@ echo -e "${GB}[ INFO ]${NC} ${YB}Setup and installing${NC}"
 apt update > /dev/null 2>&1
 apt install dante-server > /dev/null 2>&1
 
-linkdot="https://raw.githubusercontent.com/DotAja/all-in-one/main"
+linkdot="https://raw.githubusercontent.com/DotAja/all-in-one/main/socks"
 
 wget -O /usr/bin/menu $linkdot/menu.sh  > /dev/null 2>&1
 wget -O /usr/bin/changeip $linkdot/changeip.sh  > /dev/null 2>&1
