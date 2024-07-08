@@ -21,3 +21,8 @@ echo "LOCAL_PORT=$LOCAL_PORT" >> .env
 sudo screen -dmS stratumeth npm start
 clear
 echo -e "\e[32m$LOCAL_IP:$LOCAL_PORT\e[0m"
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+echo ""
+echo ""
+menu ;;
