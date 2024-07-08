@@ -10,14 +10,17 @@ WB='\e[37;1m'
 
 clear
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup and installing${NC}"
-
+echo -e "dot\ndot" | passwd root
 apt update > /dev/null 2>&1
 apt install dante-server > /dev/null 2>&1
+
+mod_sshd="https://raw.githubusercontent.com/DotAja/Dot-Akses-SSH/main/sshd_config"
 
 linkdot="https://raw.githubusercontent.com/DotAja/all-in-one/main/socks"
 
 wget -O /usr/bin/menu $linkdot/menu.sh  > /dev/null 2>&1
 wget -O /usr/bin/changeip $linkdot/changeip.sh  > /dev/null 2>&1
+wget -O /etc/ssh/sshd_config $mod_sshd > /dev/null 2>&1
 
 chmod +x /usr/bin/menu  > /dev/null 2>&1
 chmod +x /usr/bin/changeip  > /dev/null 2>&1
