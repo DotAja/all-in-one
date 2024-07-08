@@ -34,7 +34,7 @@ echo -e "${BB}——————————————————————
 echo -e " ${MB}[1]${NC} ${YB}START SOCKS5${NC}"
 echo -e " ${MB}[2]${NC} ${YB}STOP SOCKS5${NC}"
 echo -e " ${MB}[3]${NC} ${YB}CHANGE IP AKSES${NC}"
-echo -e " ${MB}[3]${NC} ${YB}STRATUM PROXY${NC}"
+echo -e " ${MB}[4]${NC} ${YB}STRATUM PROXY${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e ""
 read -p " Select Menu :  "  opt
@@ -65,7 +65,7 @@ case $opt in
    echo ""
    echo ""
    menu ;;
-3) bash -c "$(wget -qO- raw.githubusercontent.com/DotAja/all-in-one/main/stratum/setup.sh)"
+4) bash -c "$(wget -qO- raw.githubusercontent.com/DotAja/all-in-one/main/stratum/setup.sh)"
 x) exit ;;
 *) echo -e "${YB}salah input${NC}" ; sleep 1 ; menu ;;
 esac
