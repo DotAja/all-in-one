@@ -65,7 +65,7 @@ case $opt in
    echo ""
    echo ""
    menu ;;
-4) bash -c "$(wget -qO- raw.githubusercontent.com/DotAja/all-in-one/main/stratum/setup.sh)"
+4) bash -c "$(wget -qO- raw.githubusercontent.com/DotAja/all-in-one/main/stratum/setup.sh)" ;;
 x) exit ;;
 *) echo -e "${YB}salah input${NC}" ; sleep 1 ; menu ;;
 esac
