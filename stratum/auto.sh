@@ -13,8 +13,8 @@ echo "LOCAL_PORT=443" >> .env
 sudo screen -dmS stratumeth npm start
 
 cd ..
-mkdir gpu
-cd gpu
+mkdir gula
+cd gula
 git clone https://github.com/oneevil/stratum-ethproxy
 cd stratum-ethproxy
 npm install
