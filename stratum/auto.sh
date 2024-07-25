@@ -1,6 +1,6 @@
 sudo apt install -y docker.io npm
-mkdir 
-cd 
+mkdir gpu
+cd gpu
 git clone https://github.com/oneevil/stratum-ethproxy
 cd stratum-ethproxy
 npm install
@@ -13,8 +13,8 @@ echo "LOCAL_PORT=443" >> .env
 sudo screen -dmS stratumeth npm start
 
 cd ..
-mkdir 
-cd 
+mkdir gpu
+cd gpu
 git clone https://github.com/oneevil/stratum-ethproxy
 cd stratum-ethproxy
 npm install
