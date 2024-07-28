@@ -3,10 +3,15 @@ sudo apt update
 sudo apt install -y docker.io npm
 
 # Create and set up the 'gpu' directory
-mkdir Pointing
-cd Pointing
-git clone https://github.com/oneevil/stratum-ethproxy
-cd stratum-ethproxy
+mkdir gpu
+cd gpu
+
+# Clone the repository twice into separate directories
+git clone https://github.com/oneevil/stratum-ethproxy stratum-ethproxy_gpu
+git clone https://github.com/oneevil/stratum-ethproxy stratum-ethproxy_gula
+
+# Set up and start the 'gpu' instance
+cd stratum-ethproxy_gpu
 npm install
 
 # Set environment variables for 'gpu'
@@ -22,8 +27,9 @@ EOL
 # Start the stratum-ethproxy in a detached screen session with a specific name
 sudo screen -dmS stratumeth_gpu npm start
 
-# Reset .env file for 'gula'
-> .env
+# Set up and start the 'gula' instance
+cd ../stratum-ethproxy_gula
+npm install
 
 # Set environment variables for 'gula'
 cat <<EOL >> .env
