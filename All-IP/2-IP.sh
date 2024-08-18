@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear
+echo "NOTE: Masukan Alamat Ip Sesuai Urutan Dari Cloudsigma"
 read -p "Masukkan alamat IP 1: " ip1
 read -p "Masukkan alamat IP 2: " ip2
 
