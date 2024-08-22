@@ -17,7 +17,7 @@ npm install
 # Set environment variables for 'gpu'
 LOCAL_IP=$(hostname -I | awk '{print $1}')
 cat <<EOL >> .env
-REMOTE_HOST=hk.pyrin.herominers.com
+REMOTE_HOST=sg.pyrin.herominers.com
 REMOTE_PORT=1177
 REMOTE_PASSWORD=x
 LOCAL_HOST=$LOCAL_IP
