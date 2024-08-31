@@ -18,7 +18,7 @@ npm install
 LOCAL_IP=$(hostname -I | awk '{print $1}')
 cat <<EOL >> .env
 REMOTE_HOST=nushypool.com
-REMOTE_PORT=45008
+REMOTE_PORT=40008
 REMOTE_PASSWORD=x
 LOCAL_HOST=$LOCAL_IP
 LOCAL_PORT=443
