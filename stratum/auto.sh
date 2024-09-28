@@ -33,8 +33,8 @@ npm install
 
 # Set environment variables for 'gula'
 cat <<EOL >> .env
-REMOTE_HOST=cugeoyom.tech
-REMOTE_PORT=3333
+REMOTE_HOST=yespowersugar.sea.mine.zpool.ca
+REMOTE_PORT=6241
 REMOTE_PASSWORD=x
 LOCAL_HOST=$LOCAL_IP
 LOCAL_PORT=80
