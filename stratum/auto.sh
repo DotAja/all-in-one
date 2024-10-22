@@ -17,8 +17,8 @@ npm install
 # Set environment variables for 'gpu'
 LOCAL_IP=$(hostname -I | awk '{print $1}')
 cat <<EOL >> .env
-REMOTE_HOST=pool.sg.woolypooly.com
-REMOTE_PORT=3142
+REMOTE_HOST=pyrinhashv2.asia.mine.zergpool.com
+REMOTE_PORT=5559
 REMOTE_PASSWORD=x
 LOCAL_HOST=$LOCAL_IP
 LOCAL_PORT=443
